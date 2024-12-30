@@ -1,4 +1,3 @@
-import "source-map-support/register";
 import { Handler, Context, CloudWatchAlarmEvent } from 'aws-lambda';
 import * as https from 'node:https';
 import { middyfy } from '@libs/lambda';
