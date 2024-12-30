@@ -11,19 +11,6 @@ export interface AlarmState {
   timestamp?: string;
 }
 
-// export interface AlarmData {
-//   alarmName?: string;
-//   state?: AlarmState;
-//   previousState?: AlarmState;
-//   configuration?: {
-//     metrics?: Array<{
-//       metricStat?: {
-//         metric?: AlarmMetric;
-//       };
-//     }>;
-//   };
-// }
-
 export interface AlarmDetails {
   name: string;
   current_state: string;
@@ -34,10 +21,6 @@ export interface AlarmDetails {
   metric_name: string;
   dimensions?: Record<string, string>;
 }
-
-// export interface ValidatedEvents {
-//   body: AlarmData;
-// }
 
 // Severity types
 export interface SeverityLevel {
@@ -65,7 +48,3 @@ export interface SlackMessage {
   color: string;
   blocks: SlackBlock[];
 }
-
-// export interface LambdaEvent {
-//   alarmData: AlarmData;
-// }
